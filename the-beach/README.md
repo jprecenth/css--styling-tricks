@@ -41,8 +41,6 @@ Webbplatsen ska ha följande animerade element och interaktioner:
 
 - **Animation**: Kontinuerlig scrollning av kundrecensioner
 - **Beteende**: Oändlig loop med mjuka övergångar
-- **CSS Properties**: `animation`, `transform: translateX()`
-- **@keyframes**: `carousel-scroll` - linjär rörelse
 
 ### 🖱️ Hover-effekter på Carousel Items
 
