@@ -1,0 +1,16 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(to right, #9bad9b, #d1dad1);
+}
+
+/* Bara till för att göra bilderna mer överskådliga i början.
+  Ändra stylingen vid behov. */
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
