@@ -17,9 +17,13 @@ Men fokusera i första hand på att skapa mjuka och engagerande animationer som 
 
 ### Bakgrundsbilden
 
-<img src="https://images.unsplash.com/photo-1755446133347-d9def00b03a3" height="200px">
+<img src="https://images.unsplash.com/photo-1755446133347-d9def00b03a3" height="300">
 
-### [Länk till designen som inspirerade sidan](https://dribbble.com/shots/7073442-Airlines-Landing-Page-Preview)
+### Den stylade versionen
+
+<img src="screenshot.png" height="300">
+
+Designen i uppgiften är inspirerad av [denna mock-up](https://dribbble.com/shots/7073442-Airlines-Landing-Page-Preview) av en landing page för ett flygbolag.
 
 ### 💡 Om man byter bild är det också viktigt att se över färgerna. En orange eller blå primära färg funkar i dessa fall pga hur de förhåller sig till bakgrundsbildens färger
 
