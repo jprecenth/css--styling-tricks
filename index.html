@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinoteket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <h3>Dinoteket</h3>
+                    <img src="/diplodocus-icon.png" class="diplo">
+            </div>
+            <div class="text-container">
+                <h4>Lär dig allt som finns att veta om</h4>
+                <hr>
+                <h1>Dinosaurier</h1>
+                <img src="/trex-icon.png" class="trex">
+            </div>
+        </div>
+        <div class="mid-container">
+            <div class="testimonials">
+                <h2>Kända <span class="fossil-text">fossiler<span class="fossil-tooltip">💡 En fossil är djur eller växtdelar<br>som bevarats i jorden och förstenats.</span></span></h2>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <a href="ankylosaurus.html"><div class="carousel-item">
+                            <img src="/ankylosaurus-img.png"
+                                alt="Ankylosaurus">
+                            <h4 class="name">Ankylosaurus</h4>
+                            <h4 class="age">Yngre Krita</h4>
+                            <p>En välbepansrad växtätare med den ikoniska klubban i änden av svansen som gjorde den till ett tufft byte.
+                            </p>
+                        </div></a>
+                            <a href="velociraptior.html"><div class="carousel-item"><img src="/velociraptor-img.png"
+                                alt="Velociraptor">
+                            <h4 class="name">Velociraptor</h4>
+                            <h4 class="age">Yngre Krita</h4>
+                            <p>En intelligent jägare med skräckinjagande långa klor och snabba ben.
+                            </p>
+                        </div></a>
+                        <a href="diplodocus.html"><div class="carousel-item">
+                            <img src="/diplodocus-img.png"
+                                alt="Diplodocus">
+                            <h4 class="name">Diplodocus</h4>
+                            <h4 class="age">Sen Jura</h4>
+                            <p>En jätte i långhalsgänget med en lång, flexibel och snärtande svans.
+                            </p>
+                        </div></a>
+                        <!-- Duplicate items for seamless loop -->
+                        <a href="ankylosaurus.html"><div class="carousel-item">
+                            <img src="/ankylosaurus-img.png"
+                                alt="Ankylosaurus">
+                            <h4 class="name">Ankylosaurus</h4>
+                            <h4 class="age">Yngre Krita</h4>
+                            <p>En välbepansrad växtätare med den ikoniska klubban i änden av svansen som gjorde den till ett tufft byte.
+                            </p>
+                        </div></a>
+                        <a href="velociraptior.html"><div class="carousel-item"><img src="/velociraptor-img.png"
+                                alt="Velociraptor">
+                            <h4 class="name">Velociraptor</h4>
+                            <h4 class="age">Yngre Krita</h4>
+                            <p>En intelligent jägare med skräckinjagande långa klor och snabba ben.
+                            </p>
+                        </div></a>
+                         <a href="diplodocus.html"><div class="carousel-item">
+                            <img src="/diplodocus-img.png"
+                                alt="Diplodocus">
+                            <h4 class="name">Diplodocus</h4>
+                            <h4 class="age">Sen Jura</h4>
+                            <p>En jätte i långhalsgänget med en lång, flexibel och snärtande svans.
+                            </p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <button class="cta">
+                <div>Öppna<br>Dinoteket</div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <div class="search-div">
+            <h3>Sök efter <span class="dino-text">dinosaurier<span class="dino-tooltip">💡 Ordet <i>dinosaurie</i> kommer från<br>grekiskans deinos (hemsk) och sauros (ödla).</span></span> i Dinoteket!</h3>
+            <div class="search-bar">
+                <div class="icon-container">
+                    <img src="/velociraptor-icon.png">
+                </div>
+                <div class="select-container">
+                    <label for="vore">Dinosaurien var...
+                        <select name="diet" id="diet">
+                            <option value="herbivore">växtätare</option>
+                            <option value="carnivore">köttätare</option>
+                            <option value="omnivore">allätare</option>
+                        </select>
+                    </label>
+                    <label for="era">Dinosaurien levde...
+                        <select name="timeSpan" id="timeSpan">
+                            <option value="trias">Under Trias</option>
+                            <option value="krita">Under Krita</option>
+                            <option value="jura">Under Jura</option>
+                        </select>
+                    </label>
+                </div>
+                <button>Sök i Dinoteket</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const logo = document.getElementById('logo');
+        logo.addEventListener('click', () => {
+            if (logo.classList.contains('animate-logo')) {
+                return;
+            }
+            logo.classList.toggle('animate-logo');
+            setTimeout(() => {
+                logo.classList.toggle('animate-logo');
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
