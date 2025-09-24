@@ -33,30 +33,23 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px 30px;
+    margin: 20px;
 }
 
-/* VELOCIRAPTOR */
-.info-text {
-    background-color: #ffffffd5;
-    padding: 15px;
-    color: black;
-    border-radius: 20px;
-    align-self: center;
-    line-height: 150%;
-    .jp-text {
+.tooltip-text {
         position: relative;
         text-decoration: underline dotted;
         text-underline-offset: 3px;
         display: inline-block;
-    }
-    .jp-tooltip {
+}
+.tooltip-tooltip {
         visibility: hidden;
         position: absolute;
         z-index: 1;
         color: white;
         bottom: 150%;
         justify-self: center;
-        width: 300px;
+        width: 200px;
         background-color: #42b83ef3;
         border-radius: 10px;
         padding: 11px;
@@ -65,7 +58,39 @@ body {
         text-align: center;
         transition-duration: .5s;
         transition-property: opacity;
-    }
+}
+
+.tooltip-text:hover .tooltip-tooltip {
+    visibility: visible;  
+    left: -40%;
+}
+
+.tooltip-text:hover {
+    cursor: help;
+}
+
+.tooltip-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #42b83ec7 transparent transparent transparent;
+}
+
+.info-text-container {
+    display: flex;
+    flex-direction: column;
+}
+.info-text {
+    background-color: #ffffffd5;
+    padding: 12px;
+    color: black;
+    border-radius: 20px;
+    align-self: flex-end;
+    line-height: 150%;
 }
   
 .nav-tags {
@@ -94,15 +119,15 @@ body {
         }
     }
 
-.info-text-container {
+.info-text-footer {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 5px;
-    }
+}
 
-.grid-text {
-    width: 220px;
+.info-text-footer-text {
+    width: 200px;
     background-color: #ffffffd5;
     padding: 12px;
     color: black;
@@ -111,6 +136,7 @@ body {
     font-size: 13px;
 }
 
+/* VELOCIRAPTOR */
 .icon-grid {
     justify-self: center;
     display: flex;
@@ -213,28 +239,9 @@ body {
         }
 }
 
-.jp-text:hover .jp-tooltip {
-    visibility: visible;  
-    left: -40%;
-}
-
-.jp-text:hover {
-    cursor: help;
-}
-
-.jp-tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #42b83ec7 transparent transparent transparent;
-}
-
 /* DIPLODOCUS */
 .top-container {
+    align-self: center;
     background-color: #ffffffd5;
     padding: 20px;
     margin-top: 20px;
@@ -246,7 +253,6 @@ body {
         z-index: 0;
         display: inline-flex;
         justify-content: center;
-        width: 100%;
         padding-left: 50px;
         height: 350px;
         .mask-div {
@@ -272,7 +278,7 @@ body {
         width: 200px;
         text-align: center;
         font-weight: 900;
-        text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+        text-shadow: rgb(0, 0, 0) 0px 0px 16px;
         color: white;
         z-index: 1;
         transition-duration: 1.5s;
@@ -341,62 +347,20 @@ body {
     justify-content: space-between;
     margin-top: 50px;
     width: 100%;
-
-    .fossil-text {
-        position: relative;
-        display: inline-block;
-        text-decoration: underline dotted;
-        text-underline-offset: 3px;
-    }
-    .fossil-tooltip {
-        visibility: hidden;
-        position: absolute;
-        z-index: 1;
-        bottom: 150%;
-        justify-self: center;
-        width: 300px;
-        background-color: #42b83ec7;
-        border-radius: 10px;
-        padding: 11px;
-        font-weight: 300;
-        font-size: 15px;
-        text-align: center;
-        transition-duration: .5s;
-        transition-property: opacity;
-    }
 }
 
-.fossil-text:hover {
-    cursor: help;
-}
-
-.fossil-text:hover .fossil-tooltip {
-    visibility: visible;
-}
-
-.fossil-tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #42b83ec7 transparent transparent transparent;
-}
-
-    .testimonials {
+.testimonials {
         width: 480px;
         height: 300px;
-    }
+}
 
-    .carousel-container {
+.carousel-container {
         height: 100%;
         mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
         overflow: hidden;
-    }
+}
 
-    .carousel-track {
+.carousel-track {
         height: 200px;
         display: flex;
         flex-direction: row;
@@ -404,9 +368,9 @@ body {
         animation-duration: 35s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-    }
+}
 
-    .carousel-item {
+.carousel-item {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -465,9 +429,9 @@ body {
         border: 6px solid #ffffff97;
         margin: 7px;
         }
-    }
+}
 
-    .carousel-item:hover {
+.carousel-item:hover {
         p {
             background-color: rgba(255, 255, 255, 0.788);
             opacity: 1;
@@ -476,9 +440,9 @@ body {
             opacity: 0;
         }
         cursor: pointer;
-    }
+}
 
-    .cta {
+.cta {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -512,8 +476,7 @@ body {
             width: 15px;
             color: rgba(0, 0, 0, 0.488);
         }
-    }
-
+}
 
 .cta:hover {
     scale: 1.05;
@@ -527,47 +490,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .dino-text {
-        position: relative;
-        text-decoration: underline dotted;
-        text-underline-offset: 3px;
-        display: inline-block;
-    }
-    .dino-tooltip {
-        visibility: hidden;
-        position: absolute;
-        z-index: 1;
-        bottom: 150%;
-        justify-self: center;
-        width: 300px;
-        background-color: #42b83ec7;
-        border-radius: 10px;
-        padding: 11px;
-        font-weight: 300;
-        font-size: 15px;
-        text-align: center;
-        transition-duration: .5s;
-        transition-property: opacity;
-    }
-}
-
-.dino-text:hover .dino-tooltip {
-    visibility: visible;  
-}
-
-.dino-text:hover {
-    cursor: help;
-}
-
-.dino-tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #42b83ec7 transparent transparent transparent;
 }
     
 .search-bar {
@@ -684,10 +606,8 @@ body {
 }
 
 @keyframes dinoCarousel {
-    50% {
-        transform: translate(-50%);
-    }
+
     100% {
-        transform: translate(0%);
+        transform: translate(-110%);
     }
 }
