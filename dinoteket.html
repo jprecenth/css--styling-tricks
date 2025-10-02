@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinoteket</title>
+    <link rel="stylesheet" href="/css--styling-tricks/the-beach/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="header">
+        <a href="/css--styling-tricks/the-beach/index.html">
+            <div class="logo-container">
+                <h3>Dinoteket</h3>
+                <img src="diplodocus-icon.png" class="diplo" alt="Small Diplodocus Icon, white outline on a bright green background">
+            </div>
+        </a>
+        <div class="text-container">
+            <h1>Dinoteket</h1>
+            <hr>
+            <h4>Sök i vårt bibliotek av dinosaurier!</h4>
+        </div>
+    </div>
+    <div class="info-text-container">
+        <div class="info-text">
+            Använd alternativen nedan för att söka efter dinosaurier i Dinoteket! Navigera mellan valen för att hitta rätt dinosaurie.
+            <div class="search-container">
+                <form>
+                    <label for="vore">Diet
+                        <select name="diet" id="diet">
+                            <option value="null" disabled selected></option>
+                            <option value="herbivore">växtätare</option>
+                            <option value="carnivore">köttätare</option>
+                            <option value="omnivore">allätare</option>
+                        </select>
+                    </label>
+                    <label for="era">Era
+                        <select name="timeSpan" id="timeSpan">
+                            <option value="null" disabled selected></option>
+                            <option value="trias"> Trias</option>
+                            <option value="krita">Krita</option>
+                            <option value="jura"> Jura</option>
+                        </select>
+                    </label>
+                    <label for="era">Typ
+                        <select name="type" id="timeSpan">
+                            <option value="null" disabled selected></option>
+                            <option value="sauropod"> Sauropod</option>
+                            <option value="ankylosaurid">Ankylosaurid</option>
+                            <option value="ceratopsid"> Ceratopsid</option>
+                        </select>
+                    </label>
+                    <label for="era">Region
+                        <select name="group" id="timeSpan">
+                            <option value="null" disabled selected></option>
+                            <option value="am"> Amerika</option>
+                            <option value="e">Europa</option>
+                            <option value="as">Asien</option>
+                        </select>
+                    </label>
+                    <label for="feathers">Fjädrar
+                        <input type="checkbox"></label>
+                    </label>
+                    <label for="water">Vattendinosaurie
+                        <input type="checkbox">
+                    </label>
+                    <button>Sök!</button>
+                    <a href="" id="clear">Rensa val</a>
+                </form>
+            </div>
+        </div>    
+        <div class="result-grid">
+            <div class="result">
+                <img src="diplodocus-img.png" alt="">
+                <p class="dinoName">Diplodocus</p>
+            </div>
+            <div class="result">
+                <img src="diplodocus-img.png" alt="">
+                <p class="dinoName">Diplodocus</p>
+            </div>
+            <div class="result">
+                <img src="diplodocus-img.png" alt="">
+                <p class="dinoName">Diplodocus</p>
+            </div>
+            <div class="result">
+                <img src="diplodocus-img.png" alt="">
+                <p class="dinoName">Diplodocus</p>
+            </div>
+            <div class="result">
+                <img src="diplodocus-img.png" alt="">
+                <p class="dinoName">Diplodocus</p>
+            </div>
+            <div class="result">
+                <img src="diplodocus-img.png" alt="">
+                <p class="dinoName">Diplodocus</p>
+            </div>
+            <div class="result">
+                <img src="diplodocus-img.png" alt="">
+                <p class="dinoName">Diplodocus</p>
+            </div>
+            <div class="result">
+                <img src="diplodocus-img.png" alt="">
+                <p class="dinoName">Diplodocus</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
